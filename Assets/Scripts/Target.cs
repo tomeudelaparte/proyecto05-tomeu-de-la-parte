@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    private float lifeTime = 2f;
+    public int points;
+    private float lifeTime = 1f;
 
+    public ParticleSystem explosionParticle;
     private GameManager gameManager;
 
     void Start()
@@ -17,11 +19,18 @@ public class Target : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
-
-        if (gameObject.CompareTag("Bad"))
+        if (!gameManager.isGameOver)
         {
-            gameManager.isGameOver = true;
+            gameManager.UpdateScore(points);
+
+            explosionParticle = Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+
+            Destroy(gameObject);
+
+            if (gameObject.CompareTag("Bad"))
+            {
+                gameManager.GameOver();
+            }
         }
     }
 
