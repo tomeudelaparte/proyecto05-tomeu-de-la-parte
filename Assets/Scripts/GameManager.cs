@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public GameObject gameOverPanel;
+    public GameObject startGamePanel;
 
     private float minX = -3.75f;
     private float minY = -3.75f;
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         scoreText.text = $"Score: " + score;
         gameOverPanel.SetActive(false);
+        startGamePanel.SetActive(true);
 
         StartCoroutine(SpawnRandomTarget());
     }
@@ -70,5 +73,28 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         gameOverPanel.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void EasyGame()
+    {
+        spawnRate = 0.75f;
+        startGamePanel.SetActive(false);
+    }
+
+    public void MediumGame()
+    {
+        spawnRate = 0.5f;
+        startGamePanel.SetActive(false);
+    }
+
+    public void HardGame()
+    {
+        spawnRate = 0.2f;
+        startGamePanel.SetActive(false);
     }
 }
