@@ -12,9 +12,9 @@ public class Target : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, lifeTime);
-
         gameManager = FindObjectOfType<GameManager>();
+        lifeTime = gameManager.spawnRate;
+        Destroy(gameObject, lifeTime);
     }
 
     private void OnMouseDown()

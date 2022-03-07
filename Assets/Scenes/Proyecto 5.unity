@@ -130,22 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1568499129}
     m_Modifications:
-    - target: {fileID: 2580722392052413858, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1365867689}
-    - target: {fileID: 2580722392052413858, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MediumGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722392052413858, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722392052413858, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2580722392510711753, guid: c32e67475a67c48469b93b61894c9574, type: 3}
       propertyPath: m_Name
       value: Main Menu
@@ -237,38 +221,6 @@ PrefabInstance:
     - target: {fileID: 2580722392510711754, guid: c32e67475a67c48469b93b61894c9574, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722393306763774, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1365867689}
-    - target: {fileID: 2580722393306763774, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EasyGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722393306763774, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722393306763774, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722393347805029, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1365867689}
-    - target: {fileID: 2580722393347805029, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HardGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722393347805029, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580722393347805029, guid: c32e67475a67c48469b93b61894c9574, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c32e67475a67c48469b93b61894c9574, type: 3}
@@ -502,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &644762697
 RectTransform:
   m_ObjectHideFlags: 0
@@ -947,7 +899,8 @@ MonoBehaviour:
   targetPositions: []
   scoreText: {fileID: 1486781396}
   gameOverPanel: {fileID: 644762696}
-  startGamePanel: {fileID: 1974175467}
+  mainMenuPanel: {fileID: 1974175467}
+  spawnRate: 2
   isGameOver: 0
 --- !u!4 &1365867690
 Transform:

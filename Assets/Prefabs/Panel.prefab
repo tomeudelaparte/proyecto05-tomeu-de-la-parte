@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2580722392052413860}
   - component: {fileID: 2580722392052413859}
   - component: {fileID: 2580722392052413858}
+  - component: {fileID: 146365479}
   m_Layer: 5
   m_Name: Medium Button
   m_TagString: Untagged
@@ -122,17 +123,30 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &146365479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580722392052413856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f6a49cabd35f14c902ad73e099cfc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 2
 --- !u!1 &2580722392231099216
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2580722392510711754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -760,6 +774,7 @@ GameObject:
   - component: {fileID: 2580722393306763744}
   - component: {fileID: 2580722393306763775}
   - component: {fileID: 2580722393306763774}
+  - component: {fileID: 146365480}
   m_Layer: 5
   m_Name: Easy Button
   m_TagString: Untagged
@@ -870,17 +885,30 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &146365480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580722393306763772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f6a49cabd35f14c902ad73e099cfc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 1
 --- !u!1 &2580722393347805027
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +921,7 @@ GameObject:
   - component: {fileID: 2580722393347805031}
   - component: {fileID: 2580722393347805030}
   - component: {fileID: 2580722393347805029}
+  - component: {fileID: 146365478}
   m_Layer: 5
   m_Name: Hard Button
   m_TagString: Untagged
@@ -1003,14 +1032,27 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &146365478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580722393347805027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f6a49cabd35f14c902ad73e099cfc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 3
